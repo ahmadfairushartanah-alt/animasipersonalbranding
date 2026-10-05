@@ -50,3 +50,26 @@ atau `npx remotion render MasterVertical out/coach-taf-master-9x16.mp4`.
 - [ ] Nombor WhatsApp & handle sosial betul
 - [ ] Muzik berlesen komersial ditambah
 - [ ] Voice-over dirakam ikut skrip dalam pelan (pilihan)
+
+---
+
+## Versi HyperFrames (YouTube 16:9)
+
+Versi kedua video yang sama, dibina dengan [HyperFrames](https://github.com/heygen-com/hyperframes) (HTML + GSAP → MP4).
+
+| Perkara | Butiran |
+|---|---|
+| Folder projek | `videos/coach-taf-youtube/` |
+| Fail utama | `videos/coach-taf-youtube/index.html` (semua teks, warna & timing) |
+| Brief | `videos/coach-taf-youtube/BRIEF.md` |
+| Hasil render | `renders/coach-taf-hyperframes-youtube-16x9.mp4` (82s, 1920×1080, 30fps) |
+
+```bash
+npx skills add heygen-com/hyperframes   # pasang skill HyperFrames (sekali sahaja)
+cd videos/coach-taf-youtube
+npm run check                            # lint + layout + contrast
+npm run dev                              # preview & edit dalam Studio
+npx hyperframes render --quality delivery --output ../../renders/coach-taf-hyperframes-youtube-16x9.mp4
+```
+
+Nota: statistik & testimoni masih bertanda **CONTOH — SAHKAN**. Edit teks terus dalam `index.html`.
