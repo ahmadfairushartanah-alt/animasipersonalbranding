@@ -1,0 +1,27 @@
+{
+  "name": "animasi-personal-branding-coach-taf",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "studio": "remotion studio",
+    "render:master": "remotion render Master out/coach-taf-master-16x9.mp4",
+    "render:social30": "remotion render Social30 out/coach-taf-30s-9x16.mp4",
+    "render:teaser15": "remotion render Teaser15 out/coach-taf-15s-9x16.mp4",
+    "render:bumper": "remotion render Bumper out/coach-taf-bumper-16x9.mp4",
+    "render:all": "npm run render:master && npm run render:social30 && npm run render:teaser15 && npm run render:bumper",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.3.0",
+    "@fontsource/montserrat": "^5.3.0",
+    "@remotion/cli": "^4.0.533",
+    "@remotion/transitions": "^4.0.533",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "remotion": "^4.0.533"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "typescript": "^7.0.2"
+  }
+}
